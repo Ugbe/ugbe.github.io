@@ -11,50 +11,55 @@
         <link rel="manifest" href="assets/site.webmanifest">
     </head>
     <body>
-        <header class="site-header">
-            <nav class="nav container">
-                <h1>Ugbedeojo Abba</h1>
-                <ul class="nav-links">
-                    <li><a href="/writing/programming/">Writing</a></li>
-                    <li><a href="/projects.html">Projects</a></li>
-                    <li><a href="/about.html">About</a></li>
-                    <li><a href="/contact.html">Contact Me</a></li>
-                </ul>
-            </nav>
 
-            <section class="hero">
-                <div class="hero-overlay"></div>
-                <div class="hero-content container">
-                    <h1>Welcome to my corner of the web!</h1>
-                    <p class="lead">I'm Ugbedeojo Success Abba, also known online as Asery (or some other variant). I build software
-                        work on many other fun projects on Youtube. I also pen (ping?) here, my musings on programming, and life.
-                    </p>
-                    <p class="cta-row"><a class="btn" href="/writing/programming/">Programming</a> <a class="btn btn-outline" href="/writing/musings/">Musings</a></p>
+        <div class="page-overlay"></div>
+        <header class="site-header">
+            <div class="header-content container">
+                <h1 class="main-title">Ugbedeojo Abba</h1>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/your-linkedin" target="_blank" aria-label="LinkedIn"><img src="assets/linkedin.svg" alt="LinkedIn" /></a>
+                    <a href="https://github.com/Ugbe" target="_blank" aria-label="GitHub"><img src="assets/github.svg" alt="GitHub" /></a>
+                    <a href="https://medium.com/@your-medium" target="_blank" aria-label="Medium"><img src="assets/medium.svg" alt="Medium" /></a>
                 </div>
-            </section>
+            </div>
         </header>
 
-        <main class="container main-grid">
-            <section id="projects" class="card">
-                <h2>Projects</h2>
-                <p>I'll curate this list manually. To add a project, we'll create a new entry in <code>/projects.html</code> or add a small card here</p>
-                <div class="projects-list" id="projects-list">
-                    <!-- manual project cards go here-->
-                     <!--example card-->
-                     <article class="project-card">
-                        <h3>Project Title</h3>
-                        <p>Short description. <a href="www.github.com/Ugbe">View on Github</a></p>
-                     </article>
+        <main class="container home-grid">
+            <section class="writing-section">
+                <h2>Writing</h2>
+                <div class="writing-columns">
+                    <div class="writing-sub writing-programming">
+                        <h3>Programming</h3>
+                        <div class="writing-list">
+                            <!-- Example card -->
+                            <div class="writing-card">
+                                <div class="writing-title">How to Build a Portfolio</div>
+                                <div class="writing-date">Dec 2025</div>
+                            </div>
+                            <!-- Add more cards here, separated by a brown line -->
+                        </div>
+                    </div>
+                    <div class="writing-sub writing-nonprogramming">
+                        <h3>!Programming</h3>
+                        <div class="writing-list">
+                            <div class="writing-card">
+                                <div class="writing-title">Reflections on 2025</div>
+                                <div class="writing-date">Nov 2025</div>
+                            </div>
+                            <!-- Add more cards here, separated by a brown line -->
+                        </div>
+                    </div>
                 </div>
             </section>
-
-            <section id="writing" class="card">
-                <h2>Writing</h2>
-                <p>Two separate writing streams: <a href="/writing/programming/">Programming</a> and <a href="/writing/thoughts/">Thoughts</a>.</p>
-                <ul class="mini-links">
-                    <li><a href="/writing/programming/">Latest Programming posts</a></li>
-                    <li><a href="/writing/thoughts/">Latest Thoughts posts</a></li>
-                </ul>
+            <section class="projects-section">
+                <h2>Projects</h2>
+                <div class="projects-list">
+                    <div class="project-card">
+                        <div class="project-title">Project Title</div>
+                        <div class="project-date">2025</div>
+                    </div>
+                    <!-- Add more cards here, separated by a brown line -->
+                </div>
             </section>
         </main>
 
