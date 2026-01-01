@@ -17,51 +17,95 @@
             <div class="header-content container">
                 <h1 class="main-title">Ugbedeojo Abba</h1>
                 <div class="social-links">
-                    <a href="https://linkedin.com/in/your-linkedin" target="_blank" aria-label="LinkedIn"><img src="assets/linkedin.svg" alt="LinkedIn" /></a>
-                    <a href="https://github.com/Ugbe" target="_blank" aria-label="GitHub"><img src="assets/github.svg" alt="GitHub" /></a>
-                    <a href="https://medium.com/@your-medium" target="_blank" aria-label="Medium"><img src="assets/medium.svg" alt="Medium" /></a>
+                    <a href="https://linkedin.com/in/ugbedeojoabba" target="_blank" aria-label="LinkedIn"><img src="assets/linkedin.svg" alt="LinkedIn" />LinkedIn</a>
+                    <a href="https://github.com/Ugbe" target="_blank" aria-label="GitHub"><img src="assets/github.svg" alt="GitHub" />GitHub</a>
+                    <a href="https://medium.com/@your-medium" target="_blank" aria-label="Medium"><img src="assets/medium.svg" alt="Medium" />Medium</a>
+                    <!--a href="https://youtube.com/@your-medium" target="_blank" aria-label="YouTube"><img src="assets/youtube.svg" alt="Medium" /></a-->
                 </div>
             </div>
         </header>
 
         <main class="container home-grid">
-            <section class="writing-section">
-                <h2>Writing</h2>
+            <section class="writing-section" onclick="toggleSection(this)">
+                <h2>Blog</h2>
                 <div class="writing-columns">
-                    <div class="writing-sub writing-programming">
+                    <div class="writing-sub writing-programming" onclick="toggleSubsection(event)">
                         <h3>Programming</h3>
                         <div class="writing-list">
-                            <!-- Example card -->
                             <div class="writing-card">
-                                <div class="writing-title">How to Build a Portfolio</div>
-                                <div class="writing-date">Dec 2025</div>
+                                <div class="writing-title"><a href="writing/programming/post-template.html">How to Build a Portfolio</a></div>
+                                <div class="writing-date">December 30, 2025</div>
+
                             </div>
-                            <!-- Add more cards here, separated by a brown line -->
-                        </div>
-                    </div>
-                    <div class="writing-sub writing-nonprogramming">
-                        <h3>!Programming</h3>
-                        <div class="writing-list">
                             <div class="writing-card">
-                                <div class="writing-title">Reflections on 2025</div>
+                                <div class="writing-title"><a href="#">Understanding CSS Grid</a></div>
                                 <div class="writing-date">Nov 2025</div>
                             </div>
-                            <!-- Add more cards here, separated by a brown line -->
+                            <div class="writing-card">
+                                <div class="writing-title"><a href="#">JavaScript for Beginners</a></div>
+                                <div class="writing-date">Oct 2025</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="writing-sub writing-nonprogramming" onclick="toggleSubsection(event)">
+                        <h3>Essays</h3>
+                        <div class="writing-list">
+                            <div class="writing-card">
+                                <div class="writing-title"><a href="writing/essays/reflections-for-2025.html">Reflections on 2025</a></div>
+                                <div class="writing-date">Nov 2025</div>
+                            </div>
+                            <div class="writing-card">
+                                <div class="writing-title"><a href="#">Travel Diaries</a></div>
+                                <div class="writing-date">Oct 2025</div>
+                            </div>
+                            <div class="writing-card">
+                                <div class="writing-title"><a href="#">Life Lessons</a></div>
+                                <div class="writing-date">Sep 2025</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="projects-section">
+            <section class="projects-section" onclick="toggleSection(this)">
                 <h2>Projects</h2>
                 <div class="projects-list">
                     <div class="project-card">
-                        <div class="project-title">Project Title</div>
+                        <div class="project-title"><a href="#">Portfolio Website</a></div>
                         <div class="project-date">2025</div>
+                        <div class="project-desc">A personal portfolio site showcasing my work, skills, and contact information. Built with HTML, CSS, and JavaScript. Responsive and visually appealing.</div>
                     </div>
-                    <!-- Add more cards here, separated by a brown line -->
+                    <div class="project-card">
+                        <div class="project-title"><a href="#">Blog Platform</a></div>
+                        <div class="project-date">2025</div>
+                        <div class="project-desc">A blogging platform for sharing articles and tutorials. Features markdown support, user authentication, and a clean, minimal design. Built for scalability.</div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-title"><a href="#">Weather App</a></div>
+                        <div class="project-date">2024</div>
+                        <div class="project-desc">A simple weather app that fetches real-time data from a public API. Includes location search, temperature, and forecast display. Designed for mobile and desktop.</div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-title"><a href="#">Task Manager</a></div>
+                        <div class="project-date">2024</div>
+                        <div class="project-desc">A productivity tool for managing daily tasks. Features drag-and-drop, deadlines, and notifications. Built with React and Firebase. This description is intentionally longer to test layout and scrolling behavior on the page, ensuring that cards with more content remain visually balanced and readable.</div>
+                    </div>
                 </div>
             </section>
         </main>
+        <script>
+        // Collapsible sections for mobile
+        function toggleSection(section) {
+            if (window.innerWidth <= 900) {
+                section.classList.toggle('active');
+            }
+        }
+        function toggleSubsection(event) {
+            if (window.innerWidth <= 900) {
+                event.stopPropagation();
+                event.currentTarget.classList.toggle('active');
+            }
+        }
+        </script>
 
         <footer class="site-footer container">
             <p>© Ugbedeojo Abba</p>
