@@ -112,7 +112,7 @@ body {
 }
 .project-desc {
 	font-size: 1.0rem;
-	color: var(--brown-800);
+	color: var(--brown-500);
 	margin-top: 0.3rem;
 	margin-bottom: 0.5rem;
 	line-height: 1.5;
